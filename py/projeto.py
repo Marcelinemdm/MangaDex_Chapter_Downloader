@@ -164,10 +164,10 @@ html_base = f'''
 </head>
 <body>
   <header>
-    <img src="/logo.png" alt="logo">
+    <a href="/home/"><img src="/logo.png" alt="logo"></a>
     <ul>
       <li>
-        <a href="/">inicio</a>
+        <a href="/home/">inicio</a>
       </li>
       <li>
         <a href="/projetos +18/">+18</a>
