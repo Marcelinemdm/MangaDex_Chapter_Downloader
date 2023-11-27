@@ -39,6 +39,7 @@ main {
 main.bg-blueglobal1900 {
   background: linear-gradient(to right, #101d42, #0d1317);
   width: 1050px;
+  height: 80vh;
   margin: 15px auto;
   border-radius: 25px;
 }
