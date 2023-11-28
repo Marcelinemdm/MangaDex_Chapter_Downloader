@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html lang="en, pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TQ = tenho queijo</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TQ = tenho queijo</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
+
 <body>
-  <header>
-    <a href="#"><img src="logo.png" alt="logo"></a>
-    <ul>
-      <li>
-        <a href="index.html">inicio</a>
-      </li>
-      <li>
-        <a href="#">+18</a>
-      </li>
-      <li>
-        <a href="#">discord</a>
-      </li>
-      <li class="search">
-        <img src="search.svg" alt="search">
-      </li>
-    </ul>
-  </header>
-  <main class="bg-blueglobal1900">
-    <h1>Lançamentos Recentes</h1>
-    <div class="lancamentos">
-      <div>
-        <a href="/projeto/spyxfam/capitulo 342963d2-9a19-4459-adf1-ddae740f6f25/index.html"></a>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <p>© 2023 - Todos os direitos reservados.</p>
-  </footer>
+
+    <header>
+        <a href="#"><img src="logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="#">+18</a></li>
+            <li><a href="#">discord</a></li>
+            <li class="search"><img src="search.svg" alt="search"></li>
+        </ul>
+    </header>
+
+    <main class="bg-blueglobal1900">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="grid">
+                        <a href="/projeto/aitsu no kanojo/capitulo"><img src="/img/aitsu-no-kanojo.jpg" alt=""style="width: 450px; height: 550px;"></a>
+                    </div>
+                    <div class="carousel-content">
+                        <p>pagina da obra</p>
+                        <a href="/projeto/aitsu no kanojo/"><p>capitulo 1</p"></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid">
+                        <a href="/projeto/SPY×FAMILY/"><img src="/img/spyxfamily.png" alt=""style="width: 450px; height: 550px;"></a>
+                    </div>
+                    <div class="carousel-content">
+                        <p>pagina da obra</p>
+                        <a href="/projeto/SPY×FAMILY/"><p>capitulo 1</p"></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid">
+                        <a href="/projeto/kanojo no sore/capitulo 24be3772-50a8-43b2-979c-06008e3854bf/index.html"><img src="/img/kanojonosore.png" alt=""style="width: 450px; height: 550px;"></a>
+                    </div>
+                    <div class="carousel-content">
+                        <p>pagina da obra</p>
+                        <a href="/projeto/kanojo no sore/"><p>capitulo 1</p"></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid">
+                        <a href="/projeto/my cool wife/"><img src="/img/mycoolwife.jpg" alt=""style="width: 450px; height: 550px;"></a>
+                    </div>
+                    <div class="carousel-content">
+                        <p>pagina da obra</p>
+                        <a href="/projeto/my cool wife/"><p>capitulo 1</p"></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid">
+                        <a href="/projeto/nan hao/"><img src="/img/nanhao.jpg" alt=""style="width: 450px; height: 550px;"></a>
+                    </div>
+                    <div class="carousel-content">
+                        <p>pagina da obra</p>
+                        <a href="/projeto/nan hao/"><p>capitulo 1</p"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- <script src="/home/script.js"></script> -->
+
 </body>
 </html>
